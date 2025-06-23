@@ -1,0 +1,1322 @@
+2025-06-22 18:39:15,403 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 18:39:15,405 - __main__ - INFO - Started syslog collection on port 5140
+2025-06-22 18:39:15,406 - __main__ - INFO - Starting end-to-end SIEM/SOAR flow
+2025-06-22 18:39:15,406 - __main__ - INFO - Starting iteration 1
+2025-06-22 18:39:15,407 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:39:15,410 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:39:15,411 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:39:15,411 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:39:15,412 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:39:15,412 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:39:15,413 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:39:15,413 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:39:15,414 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:39:15,414 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:39:15,415 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:39:15,416 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:39:15,418 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:39:15,419 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:39:15,419 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:39:15,420 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:39:15,420 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:39:15,421 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:39:15,421 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:39:15,422 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:15,422 - actions - INFO - Blocking IP address: 192.168.1.50
+2025-06-22 18:39:15,422 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:39:15,423 - actions - INFO - Account blocked: admin
+2025-06-22 18:39:15,423 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:39:15,424 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:15,424 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:39:15,425 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:39:15,425 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:39:15,426 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:15,426 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:39:15,427 - actions - INFO - Account blocked: admin
+2025-06-22 18:39:15,427 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:39:15,428 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:15,428 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:39:15,429 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:39:15,429 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:39:15,430 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:15,430 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:39:15,431 - actions - INFO - Account blocked: admin
+2025-06-22 18:39:15,431 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:39:15,432 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:15,433 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:39:15,433 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:39:15,434 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:15,435 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:15,435 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:39:15,435 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:39:30,436 - __main__ - INFO - Starting iteration 2
+2025-06-22 18:39:30,437 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:39:30,438 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:39:30,439 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:39:30,439 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:39:30,440 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:39:30,440 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:39:30,441 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:39:30,441 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:39:30,442 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:39:30,442 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:39:30,444 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:39:30,445 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:39:30,446 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:39:30,447 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:39:30,448 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:39:30,448 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:39:30,450 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:39:30,451 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:39:30,452 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:39:30,452 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:30,454 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:39:30,455 - actions - INFO - Account blocked: admin
+2025-06-22 18:39:30,455 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:39:30,456 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:30,456 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:39:30,457 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:39:30,457 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:39:30,458 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:30,458 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:39:30,459 - actions - INFO - Account blocked: admin
+2025-06-22 18:39:30,459 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:39:30,460 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:30,460 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:39:30,461 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:39:30,461 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:39:30,462 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:30,462 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:39:30,463 - actions - INFO - Account blocked: admin
+2025-06-22 18:39:30,463 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:39:30,464 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:30,464 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:39:30,465 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:39:30,465 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:39:30,466 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:39:30,466 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:39:30,466 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:46:48,593 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 18:46:48,596 - __main__ - INFO - Started syslog collection on port 5140
+2025-06-22 18:46:48,596 - __main__ - INFO - Starting end-to-end SIEM/SOAR flow
+2025-06-22 18:46:48,598 - __main__ - INFO - Starting iteration 1
+2025-06-22 18:46:48,598 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:46:48,601 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:46:48,603 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:46:48,604 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:46:48,604 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:46:48,605 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:46:48,605 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:46:48,607 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:46:48,607 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:46:48,608 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:46:48,610 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:46:48,613 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:46:48,615 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:46:48,616 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:46:48,618 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:46:48,619 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:46:48,621 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:46:48,623 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:46:48,625 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:46:48,625 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:46:48,626 - actions - INFO - Blocking IP address: 192.168.1.50
+2025-06-22 18:46:48,628 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:46:48,629 - actions - INFO - Account blocked: admin
+2025-06-22 18:46:48,629 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:46:48,631 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:46:48,632 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:46:48,637 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:46:48,639 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:46:48,639 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:46:48,641 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:46:48,642 - actions - INFO - Account blocked: admin
+2025-06-22 18:46:48,643 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:46:48,645 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:46:48,645 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:46:48,645 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:46:48,645 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:46:48,646 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:46:48,646 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:46:48,647 - actions - INFO - Account blocked: admin
+2025-06-22 18:46:48,648 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:46:48,648 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:46:48,648 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:46:48,649 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:46:48,650 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:46:48,650 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:46:48,651 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:46:48,652 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:47:03,654 - __main__ - INFO - Starting iteration 2
+2025-06-22 18:47:03,654 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:47:03,656 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:47:03,657 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:47:03,657 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:47:03,658 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:03,658 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:03,659 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:03,661 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:47:03,661 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:47:03,662 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:47:03,663 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:03,664 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:03,665 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:03,670 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:47:03,670 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:47:03,670 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:47:03,670 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:03,672 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:03,672 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:03,672 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:03,673 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:03,673 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:03,673 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:03,674 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:03,675 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:03,675 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:03,676 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:03,676 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:03,677 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:03,677 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:03,677 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:03,677 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:03,678 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:03,679 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:03,679 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:03,680 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:03,680 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:03,680 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:03,681 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:03,681 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:03,681 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:47:03,683 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:47:03,683 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:03,683 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:03,685 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:47:03,685 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:47:18,686 - __main__ - INFO - Starting iteration 3
+2025-06-22 18:47:18,686 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:47:18,688 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:47:18,688 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:47:18,689 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:47:18,689 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:18,690 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:18,690 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:18,691 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:47:18,692 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:47:18,693 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:47:18,694 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:18,695 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:18,697 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:18,698 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:47:18,698 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:47:18,699 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:47:18,700 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:18,701 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:18,701 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:18,701 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:18,702 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:18,702 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:18,703 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:18,703 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:18,704 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:18,704 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:18,705 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:18,705 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:18,705 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:18,705 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:18,706 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:18,706 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:18,706 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:18,708 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:18,708 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:18,708 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:18,708 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:18,709 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:18,709 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:18,709 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:18,711 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:47:18,711 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:47:18,711 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:18,712 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:18,712 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:47:18,712 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:47:33,713 - __main__ - INFO - Starting iteration 4
+2025-06-22 18:47:33,713 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:47:33,715 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:47:33,715 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:47:33,716 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:47:33,717 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:33,717 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:33,718 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:33,719 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:47:33,721 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:47:33,721 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:47:33,724 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:33,725 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:33,727 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:33,729 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:47:33,729 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:47:33,729 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:47:33,730 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:33,730 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:33,730 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:33,732 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:33,732 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:33,732 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:33,733 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:33,734 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:33,734 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:33,734 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:33,735 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:33,735 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:33,735 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:33,735 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:33,737 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:33,737 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:33,737 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:33,738 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:33,738 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:33,738 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:33,738 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:33,740 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:33,740 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:33,741 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:33,741 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:47:33,741 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:47:33,742 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:33,742 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:33,742 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:47:33,742 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:47:48,744 - __main__ - INFO - Starting iteration 5
+2025-06-22 18:47:48,744 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:47:48,745 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:47:48,746 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:47:48,746 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:47:48,746 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:48,747 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:48,747 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:47:48,747 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:47:48,748 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:47:48,749 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:47:48,752 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:48,758 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:48,761 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:47:48,762 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:47:48,763 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:47:48,763 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:47:48,764 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:48,764 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:48,764 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:48,766 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:48,767 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:48,768 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:48,769 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:48,769 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:48,770 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:48,771 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:48,771 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:48,771 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:48,772 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:48,772 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:48,773 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:48,773 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:48,774 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:47:48,774 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:47:48,774 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:47:48,775 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:48,775 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:47:48,776 - actions - INFO - Account blocked: admin
+2025-06-22 18:47:48,776 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:47:48,777 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:48,777 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:47:48,777 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:47:48,777 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:47:48,779 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:47:48,779 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:47:48,779 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:48:03,780 - __main__ - INFO - Starting iteration 6
+2025-06-22 18:48:03,780 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:48:03,782 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:48:03,782 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:48:03,783 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:48:03,783 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:03,784 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:03,784 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:03,784 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:48:03,785 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:48:03,785 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:48:03,787 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:03,789 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:03,791 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:03,793 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:48:03,793 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:48:03,794 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:48:03,795 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:03,795 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:03,797 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:03,800 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:03,800 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:03,802 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:03,803 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:03,804 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:03,804 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:03,805 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:03,805 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:03,806 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:03,806 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:03,806 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:03,806 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:03,808 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:03,808 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:03,808 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:03,810 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:03,810 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:03,810 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:03,811 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:03,812 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:03,812 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:03,812 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:48:03,813 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:48:03,813 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:03,813 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:03,814 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:48:03,816 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:48:18,817 - __main__ - INFO - Starting iteration 7
+2025-06-22 18:48:18,825 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:48:18,830 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:48:18,836 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:48:18,838 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:48:18,838 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:18,839 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:18,844 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:18,851 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:48:18,854 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:48:18,858 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:48:18,861 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:18,862 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:18,865 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:18,868 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:48:18,870 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:48:18,871 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:48:18,872 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:18,872 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:18,874 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:18,874 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:18,875 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:18,876 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:18,877 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:18,877 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:18,878 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:18,878 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:18,880 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:18,882 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:18,882 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:18,883 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:18,885 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:18,885 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:18,886 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:18,886 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:18,895 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:18,896 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:18,896 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:18,898 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:18,899 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:18,900 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:18,900 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:48:18,901 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:48:18,902 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:18,902 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:18,902 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:48:18,902 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:48:33,904 - __main__ - INFO - Starting iteration 8
+2025-06-22 18:48:33,904 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:48:33,906 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:48:33,906 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:48:33,906 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:48:33,907 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:33,907 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:33,907 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:33,908 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:48:33,908 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:48:33,909 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:48:33,911 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:33,914 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:33,917 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:33,919 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:48:33,920 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:48:33,920 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:48:33,921 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:33,921 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:33,921 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:33,922 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:33,922 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:33,922 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:33,923 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:33,924 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:33,924 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:33,925 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:33,926 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:33,926 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:33,927 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:33,927 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:33,928 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:33,928 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:33,929 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:33,929 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:33,929 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:33,930 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:33,930 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:33,930 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:33,932 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:33,932 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:33,932 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:48:33,932 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:48:33,934 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:33,934 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:33,934 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:48:33,934 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:48:48,936 - __main__ - INFO - Starting iteration 9
+2025-06-22 18:48:48,936 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:48:48,938 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:48:48,938 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:48:48,938 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:48:48,939 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:48,939 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:48,939 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:48:48,940 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:48:48,940 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:48:48,941 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:48:48,950 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:48,952 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:48,954 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:48:48,956 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:48:48,957 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:48:48,957 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:48:48,957 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:48,957 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:48,958 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:48,958 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:48,958 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:48,960 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:48,960 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:48,961 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:48,961 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:48,961 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:48,962 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:48,962 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:48,962 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:48,963 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:48,965 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:48,965 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:48,965 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:48:48,966 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:48:48,968 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:48:48,970 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:48,970 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:48:48,971 - actions - INFO - Account blocked: admin
+2025-06-22 18:48:48,971 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:48:48,971 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:48,971 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:48:48,973 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:48:48,973 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:48:48,973 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:48:48,973 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:48:48,974 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:49:03,975 - __main__ - INFO - Starting iteration 10
+2025-06-22 18:49:03,975 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:49:03,977 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:49:03,977 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:49:03,977 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:49:03,978 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:03,979 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:03,979 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:03,979 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:49:03,980 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:49:03,980 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:49:03,981 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:03,984 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:03,985 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:03,987 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:49:03,987 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:49:03,988 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:49:03,988 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:03,989 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:03,989 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:03,989 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:03,990 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:03,990 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:03,991 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:03,991 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:03,991 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:03,993 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:03,993 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:03,993 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:03,995 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:03,995 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:03,995 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:03,996 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:03,996 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:03,997 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:03,998 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:03,998 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:03,998 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:03,999 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:03,999 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:03,999 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:03,999 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:49:04,001 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:49:04,001 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:04,001 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:04,002 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:49:04,003 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:49:19,004 - __main__ - INFO - Starting iteration 11
+2025-06-22 18:49:19,004 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:49:19,006 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:49:19,006 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:49:19,007 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:49:19,008 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:19,008 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:19,009 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:19,009 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:49:19,009 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:49:19,010 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:49:19,011 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:19,012 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:19,015 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:19,016 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:49:19,017 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:49:19,017 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:49:19,018 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:19,018 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:19,018 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:19,019 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:19,019 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:19,020 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:19,021 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:19,021 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:19,021 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:19,022 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:19,022 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:19,023 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:19,023 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:19,023 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:19,025 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:19,025 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:19,025 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:19,027 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:19,027 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:19,027 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:19,028 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:19,028 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:19,028 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:19,030 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:19,030 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:49:19,030 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:49:19,030 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:19,031 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:19,031 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:49:19,031 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:49:34,033 - __main__ - INFO - Starting iteration 12
+2025-06-22 18:49:34,033 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:49:34,036 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:49:34,036 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:49:34,036 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:49:34,037 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:34,037 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:34,038 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:34,038 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:49:34,039 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:49:34,039 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:49:34,040 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:34,042 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:34,044 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:34,045 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:49:34,046 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:49:34,046 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:49:34,046 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:34,047 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:34,048 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:34,048 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:34,048 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:34,050 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:34,050 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:34,051 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:34,051 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:34,051 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:34,052 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:34,052 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:34,052 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:34,053 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:34,053 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:34,054 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:34,054 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:34,054 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:34,056 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:34,056 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:34,057 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:34,057 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:34,058 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:34,058 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:34,059 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:49:34,060 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:49:34,060 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:34,061 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:34,061 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:49:34,061 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:49:49,063 - __main__ - INFO - Starting iteration 13
+2025-06-22 18:49:49,063 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:49:49,064 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:49:49,064 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:49:49,065 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:49:49,065 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:49,067 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:49,067 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:49:49,067 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:49:49,067 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:49:49,068 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:49:49,069 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:49,071 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:49,072 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:49:49,073 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:49:49,074 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:49:49,074 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:49:49,074 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:49,074 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:49,075 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:49,075 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:49,075 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:49,076 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:49,076 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:49,077 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:49,077 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:49,077 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:49,079 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:49,079 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:49,079 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:49,080 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:49,080 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:49,080 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:49,081 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:49:49,081 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:49:49,081 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:49:49,082 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:49,082 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:49:49,083 - actions - INFO - Account blocked: admin
+2025-06-22 18:49:49,083 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:49:49,083 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:49,085 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:49:49,085 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:49:49,086 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:49:49,086 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:49:49,086 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:49:49,087 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:50:04,088 - __main__ - INFO - Starting iteration 14
+2025-06-22 18:50:04,088 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:50:04,090 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:50:04,091 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:50:04,091 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:50:04,091 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:04,092 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:04,092 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:04,093 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:50:04,093 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:50:04,093 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:50:04,094 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:04,097 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:04,099 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:04,100 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:50:04,101 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:50:04,101 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:50:04,102 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:04,102 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:04,103 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:04,103 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:04,104 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:04,104 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:04,105 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:04,105 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:04,105 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:04,106 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:04,106 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:04,106 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:04,106 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:04,108 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:04,108 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:04,109 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:04,110 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:04,110 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:04,110 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:04,111 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:04,111 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:04,112 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:04,112 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:04,112 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:04,112 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:50:04,112 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:50:04,114 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:04,115 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:04,115 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:50:04,116 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:50:19,117 - __main__ - INFO - Starting iteration 15
+2025-06-22 18:50:19,117 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:50:19,119 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:50:19,119 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:50:19,120 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:50:19,120 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:19,120 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:19,121 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:19,121 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:50:19,121 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:50:19,122 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:50:19,123 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:19,125 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:19,126 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:19,127 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:50:19,128 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:50:19,128 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:50:19,128 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:19,129 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:19,129 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:19,129 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:19,130 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:19,130 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:19,131 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:19,131 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:19,131 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:19,131 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:19,131 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:19,133 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:19,133 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:19,133 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:19,133 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:19,135 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:19,135 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:19,135 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:19,136 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:19,136 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:19,136 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:19,136 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:19,138 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:19,138 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:19,138 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:50:19,139 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:50:19,139 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:19,139 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:19,139 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:50:19,141 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:50:34,142 - __main__ - INFO - Starting iteration 16
+2025-06-22 18:50:34,142 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:50:34,144 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:50:34,145 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:50:34,145 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:50:34,145 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:34,146 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:34,146 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:34,146 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:50:34,147 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:50:34,147 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:50:34,148 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:34,150 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:34,152 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:34,155 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:50:34,155 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:50:34,156 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:50:34,157 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:34,158 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:34,158 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:34,160 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:34,160 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:34,160 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:34,161 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:34,161 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:34,161 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:34,162 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:34,162 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:34,163 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:34,163 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:34,164 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:34,164 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:34,164 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:34,165 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:34,165 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:34,165 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:34,167 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:34,167 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:34,168 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:34,168 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:34,169 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:34,169 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:50:34,169 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:50:34,170 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:34,171 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:34,171 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:50:34,171 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:50:49,172 - __main__ - INFO - Starting iteration 17
+2025-06-22 18:50:49,172 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:50:49,175 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:50:49,175 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:50:49,176 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:50:49,176 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:49,176 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:49,178 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:50:49,178 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:50:49,179 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:50:49,179 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:50:49,181 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:49,182 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:49,183 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:50:49,185 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:50:49,185 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:50:49,186 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:50:49,186 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:49,186 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:49,188 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:49,188 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:49,189 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:49,190 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:49,190 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:49,191 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:49,191 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:49,192 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:49,192 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:49,192 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:49,194 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:49,194 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:49,195 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:49,195 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:49,195 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:50:49,197 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:50:49,197 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:50:49,198 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:49,198 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:50:49,198 - actions - INFO - Account blocked: admin
+2025-06-22 18:50:49,200 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:50:49,200 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:49,200 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:50:49,201 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:50:49,201 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:50:49,202 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:50:49,202 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:50:49,202 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:51:04,203 - __main__ - INFO - Starting iteration 18
+2025-06-22 18:51:04,204 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:51:04,205 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:51:04,205 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:51:04,205 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:51:04,205 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:04,207 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:04,207 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:04,207 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:51:04,209 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:51:04,209 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:51:04,210 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:04,212 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:04,212 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:04,214 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:51:04,214 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:51:04,215 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:51:04,215 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:04,215 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:04,215 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:04,217 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:04,217 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:04,217 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:04,218 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:04,218 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:04,218 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:04,219 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:04,219 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:04,219 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:04,221 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:04,221 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:04,221 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:04,223 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:04,223 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:04,223 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:04,224 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:04,224 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:04,226 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:04,226 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:04,227 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:04,227 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:04,227 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:51:04,227 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:51:04,229 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:04,229 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:04,229 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:51:04,230 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:51:19,231 - __main__ - INFO - Starting iteration 19
+2025-06-22 18:51:19,231 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:51:19,233 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:51:19,234 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:51:19,234 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:51:19,235 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:19,236 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:19,236 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:19,237 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:51:19,238 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:51:19,238 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:51:19,241 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:19,242 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:19,244 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:19,245 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:51:19,245 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:51:19,246 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:51:19,246 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:19,248 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:19,248 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:19,248 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:19,249 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:19,249 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:19,249 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:19,250 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:19,250 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:19,250 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:19,251 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:19,251 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:19,252 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:19,252 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:19,253 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:19,253 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:19,254 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:19,254 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:19,254 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:19,254 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:19,256 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:19,256 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:19,257 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:19,257 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:19,258 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:51:19,258 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:51:19,260 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:19,260 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:19,260 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:51:19,261 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:51:34,262 - __main__ - INFO - Starting iteration 20
+2025-06-22 18:51:34,262 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:51:34,264 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:51:34,265 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:51:34,265 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:51:34,265 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:34,266 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:34,266 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:34,266 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:51:34,266 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:51:34,267 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:51:34,269 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:34,272 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:34,273 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:34,275 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:51:34,276 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:51:34,276 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:51:34,276 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:34,277 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:34,277 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:34,278 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:34,278 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:34,278 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:34,280 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:34,280 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:34,280 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:34,281 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:34,281 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:34,282 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:34,282 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:34,282 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:34,283 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:34,283 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:34,283 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:34,283 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:34,285 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:34,285 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:34,285 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:34,286 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:34,286 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:34,287 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:34,287 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:51:34,287 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:51:34,288 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:34,288 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:34,289 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:51:34,289 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:51:49,290 - __main__ - INFO - Starting iteration 21
+2025-06-22 18:51:49,292 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:51:49,293 - parser - INFO - Parsed 11 events from test_logs\raw.log
+2025-06-22 18:51:49,295 - __main__ - INFO - Parsed 11 events
+2025-06-22 18:51:49,296 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:51:49,297 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:49,298 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:49,299 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:51:49,300 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:51:49,301 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:51:49,302 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:51:49,304 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:49,305 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:49,308 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:51:49,310 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:51:49,310 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:51:49,311 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:51:49,311 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:49,312 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:49,312 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:49,312 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:49,313 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:49,313 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:49,313 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:49,315 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:49,315 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:49,315 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:49,315 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:49,317 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:49,317 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:49,317 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:49,318 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:49,318 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:49,318 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:51:49,318 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:51:49,319 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:51:49,319 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:49,319 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:51:49,320 - actions - INFO - Account blocked: admin
+2025-06-22 18:51:49,320 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:51:49,321 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:49,321 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:51:49,322 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:51:49,322 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:51:49,322 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:51:49,324 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:51:49,324 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:52:04,325 - __main__ - INFO - Starting iteration 22
+2025-06-22 18:52:04,325 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:52:04,327 - parser - INFO - Parsed 12 events from test_logs\raw.log
+2025-06-22 18:52:04,327 - __main__ - INFO - Parsed 12 events
+2025-06-22 18:52:04,328 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:52:04,328 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:04,329 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:04,329 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:04,330 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:52:04,330 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:52:04,330 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:52:04,331 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:04,333 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:04,335 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:04,337 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:52:04,337 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:52:04,337 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:52:04,338 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:04,338 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:04,339 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:04,339 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:04,339 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:04,340 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:04,341 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:04,341 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:04,342 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:04,342 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:04,342 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:04,343 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:04,343 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:04,343 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:04,343 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:04,345 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:04,345 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:04,345 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:04,346 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:04,346 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:04,346 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:04,347 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:04,347 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:04,347 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:04,349 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:52:04,349 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:52:04,349 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:04,350 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:04,350 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:52:04,350 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:52:19,351 - __main__ - INFO - Starting iteration 23
+2025-06-22 18:52:19,351 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:52:19,352 - parser - INFO - Parsed 12 events from test_logs\raw.log
+2025-06-22 18:52:19,353 - __main__ - INFO - Parsed 12 events
+2025-06-22 18:52:19,353 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:52:19,354 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:19,354 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:19,355 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:19,355 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:52:19,356 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:52:19,358 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:52:19,360 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:19,361 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:19,363 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:19,366 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:52:19,368 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:52:19,369 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:52:19,370 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:19,370 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:19,371 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:19,372 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:19,372 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:19,372 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:19,373 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:19,373 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:19,373 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:19,375 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:19,375 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:19,376 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:19,376 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:19,377 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:19,378 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:19,378 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:19,378 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:19,379 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:19,379 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:19,379 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:19,380 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:19,380 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:19,381 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:19,381 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:19,381 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:52:19,382 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:52:19,382 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:19,382 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:19,383 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:52:19,383 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:52:34,385 - __main__ - INFO - Starting iteration 24
+2025-06-22 18:52:34,385 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:52:34,386 - parser - INFO - Parsed 12 events from test_logs\raw.log
+2025-06-22 18:52:34,386 - __main__ - INFO - Parsed 12 events
+2025-06-22 18:52:34,387 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:52:34,387 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:34,388 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:34,388 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:34,388 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:52:34,389 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:52:34,389 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:52:34,391 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:34,392 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:34,394 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:34,395 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:52:34,396 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:52:34,396 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:52:34,397 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:34,397 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:34,398 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:34,398 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:34,398 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:34,399 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:34,399 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:34,400 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:34,400 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:34,400 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:34,401 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:34,401 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:34,401 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:34,402 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:34,402 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:34,403 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:34,404 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:34,404 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:34,405 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:34,405 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:34,405 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:34,406 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:34,406 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:34,406 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:34,407 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:52:34,407 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:52:34,408 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:34,408 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:34,408 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:52:34,409 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:52:49,410 - __main__ - INFO - Starting iteration 25
+2025-06-22 18:52:49,410 - __main__ - INFO - Step 1: Parsing raw logs
+2025-06-22 18:52:49,411 - parser - INFO - Parsed 12 events from test_logs\raw.log
+2025-06-22 18:52:49,412 - __main__ - INFO - Parsed 12 events
+2025-06-22 18:52:49,412 - __main__ - INFO - Step 2: Running correlation analysis
+2025-06-22 18:52:49,412 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:49,412 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:49,413 - correlator - CRITICAL - RANSOMWARE DETECTED from 192.168.1.50!
+2025-06-22 18:52:49,413 - correlator - CRITICAL - R3 generated 3 CRITICAL ransomware alerts
+2025-06-22 18:52:49,413 - correlator - INFO - R1 generated 1 alerts
+2025-06-22 18:52:49,414 - correlator - INFO - R2 generated 0 alerts
+2025-06-22 18:52:49,415 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:49,416 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:49,418 - correlator - INFO - Alert saved to CSV: R3_ransomware_detected - 192.168.1.50
+2025-06-22 18:52:49,419 - correlator - INFO - Alert saved to CSV: R1_login_failures - 192.168.1.50
+2025-06-22 18:52:49,420 - __main__ - INFO - Generated 4 alerts
+2025-06-22 18:52:49,420 - __main__ - INFO - Step 3: Executing SOAR actions
+2025-06-22 18:52:49,420 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:49,420 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:49,421 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:49,421 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:49,421 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:49,422 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:49,422 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:49,423 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:49,423 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:49,423 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:49,424 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:49,424 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:49,424 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:49,425 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:49,425 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:49,425 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:49,425 - __main__ - INFO - Executing SOAR actions for alert: R3_ransomware_detected
+2025-06-22 18:52:49,425 - actions - INFO - Incident notification sent: R3_ransomware_detected: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50
+2025-06-22 18:52:49,427 - __main__ - CRITICAL - EXECUTING EMERGENCY RANSOMWARE RESPONSE for 192.168.1.50
+2025-06-22 18:52:49,427 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:49,427 - actions - INFO - Collecting forensic data from: 192.168.1.50
+2025-06-22 18:52:49,427 - actions - INFO - Account blocked: admin
+2025-06-22 18:52:49,428 - actions - INFO - Incident notification sent: RANSOMWARE EMERGENCY: RANSOMWARE DETECTED! Immediate isolation required for 192.168.1.50 - Files affected: unknown
+2025-06-22 18:52:49,428 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:49,428 - __main__ - INFO - Executing SOAR actions for alert: R1_login_failures
+2025-06-22 18:52:49,428 - actions - INFO - Incident notification sent: R1_login_failures: 5 login failures detected from 192.168.1.50 within 5 minutes
+2025-06-22 18:52:49,429 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 18:52:49,429 - actions - INFO - Notification sent for alert: None
+2025-06-22 18:52:49,429 - parser - INFO - Cleared all parsed events from memory
+2025-06-22 18:52:49,429 - __main__ - INFO - Waiting 15 seconds before next iteration
+2025-06-22 18:52:54,574 - collector - INFO - Syslog listener stopped
+2025-06-22 18:52:54,574 - __main__ - INFO - Stopped syslog collection
+2025-06-22 18:52:54,575 - __main__ - INFO - End-to-end flow stopped
+2025-06-22 19:16:23,323 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 19:16:23,324 - collector - ERROR - Permission denied: Cannot bind to port 5140. Try using port > 1024 or run as administrator.
+2025-06-22 19:16:23,325 - orchestrator - INFO - Started syslog collection on port 5140
+2025-06-22 19:16:56,988 - collector - INFO - Syslog listener stopped
+2025-06-22 19:16:56,989 - orchestrator - INFO - Stopped syslog collection
+2025-06-22 19:38:33,838 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 19:38:33,840 - collector - ERROR - Permission denied: Cannot bind to port 5140. Try using port > 1024 or run as administrator.
+2025-06-22 19:38:33,841 - orchestrator - INFO - Started syslog collection on port 5140
+2025-06-22 19:40:36,651 - actions - INFO - Host isolated: 192.168.1.100
+2025-06-22 19:42:29,601 - collector - INFO - Syslog listener stopped
+2025-06-22 19:42:29,601 - orchestrator - INFO - Stopped syslog collection
+2025-06-22 19:42:31,709 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 19:42:31,710 - collector - ERROR - Permission denied: Cannot bind to port 5140. Try using port > 1024 or run as administrator.
+2025-06-22 19:42:31,711 - orchestrator - INFO - Started syslog collection on port 5140
+2025-06-22 19:49:16,262 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 19:49:16,264 - collector - ERROR - Permission denied: Cannot bind to port 5140. Try using port > 1024 or run as administrator.
+2025-06-22 19:49:16,265 - orchestrator - INFO - Started syslog collection on port 5140
+2025-06-22 19:50:28,986 - actions - INFO - Host isolated: 192.168.1.100
+2025-06-22 19:50:48,081 - collector - INFO - Syslog listener stopped
+2025-06-22 19:50:48,082 - orchestrator - INFO - Stopped syslog collection
+2025-06-22 19:56:30,374 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 19:56:30,376 - collector - ERROR - Permission denied: Cannot bind to port 5140. Try using port > 1024 or run as administrator.
+2025-06-22 19:56:30,377 - orchestrator - INFO - Started syslog collection on port 5140
+2025-06-22 19:56:41,425 - actions - INFO - Host isolated: 192.168.1.100
+2025-06-22 19:56:42,643 - actions - INFO - Account blocked: admin
+2025-06-22 19:57:09,793 - collector - INFO - Syslog listener stopped
+2025-06-22 19:57:09,793 - orchestrator - INFO - Stopped syslog collection
+2025-06-22 20:15:39,437 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 20:15:39,439 - collector - ERROR - Permission denied: Cannot bind to port 5140. Try using port > 1024 or run as administrator.
+2025-06-22 20:15:39,441 - orchestrator - INFO - Started syslog collection on port 5140
+2025-06-22 20:15:51,738 - collector - INFO - Syslog listener stopped
+2025-06-22 20:15:51,739 - orchestrator - INFO - Stopped syslog collection
+2025-06-22 20:17:02,078 - collector - INFO - Syslog listener started on 0.0.0.0:5140
+2025-06-22 20:17:02,082 - collector - ERROR - Permission denied: Cannot bind to port 5140. Try using port > 1024 or run as administrator.
+2025-06-22 20:17:02,088 - orchestrator - INFO - Started syslog collection on port 5140
+2025-06-22 20:20:27,565 - actions - INFO - Host isolated: 192.168.1.101
+2025-06-22 20:20:32,313 - actions - INFO - Host isolated: 192.168.1.50
+2025-06-22 20:20:35,276 - actions - INFO - Account blocked: admin
+2025-06-22 20:21:12,600 - actions - INFO - Host isolated: 192.168.1.88
+2025-06-22 20:21:14,207 - actions - INFO - Account blocked: admin
+2025-06-22 20:22:28,803 - collector - INFO - Syslog listener stopped
+2025-06-22 20:22:28,804 - orchestrator - INFO - Stopped syslog collection

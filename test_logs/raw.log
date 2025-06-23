@@ -1,0 +1,77 @@
+2023-10-15T14:30:15.123456 [192.168.1.50] Oct 15 14:30:15 server sshd: Failed password for user admin from 192.168.1.50
+2023-10-15T14:30:25.234567 [192.168.1.50] Oct 15 14:30:25 server sshd: Failed password for user admin from 192.168.1.50
+2023-10-15T14:30:35.345678 [192.168.1.50] Oct 15 14:30:35 server sshd: Failed password for user admin from 192.168.1.50
+2023-10-15T14:30:45.456789 [192.168.1.50] Oct 15 14:30:45 server sshd: Failed password for user admin from 192.168.1.50
+2023-10-15T14:30:55.567890 [192.168.1.50] Oct 15 14:30:55 server sshd: Failed password for user admin from 192.168.1.50
+2023-10-15T14:31:05.678901 [192.168.1.50] Oct 15 14:31:05 server sshd: Accepted password for user admin from 192.168.1.50
+2023-10-15T14:31:15.789012 [192.168.1.50] {"timestamp": "2023-10-15T14:31:15.789012", "source_ip": "192.168.1.50", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "process": "suspicious_encrypt.exe", "files_affected": 127, "encryption_signature": "CRYPTOR_V2"}
+2023-10-15T14:31:25.890123 [192.168.1.50] {"timestamp": "2023-10-15T14:31:25.890123", "source_ip": "192.168.1.50", "event_type": "ransomware_detected", "details": "Ransom note created: YOUR_FILES_ARE_ENCRYPTED.txt", "process": "suspicious_encrypt.exe", "ransom_note_path": "C:\\Users\\Desktop\\YOUR_FILES_ARE_ENCRYPTED.txt"}
+2023-10-15T14:31:35.901234 [192.168.1.50] {"timestamp": "2023-10-15T14:31:35.901234", "source_ip": "192.168.1.50", "event_type": "ransomware_detected", "details": "Network share encryption detected on \\\\fileserver\\shared", "process": "suspicious_encrypt.exe", "network_shares_affected": 3}
+2023-10-15T14:32:00.012345 [192.168.1.100] Oct 15 14:32:00 server login: User john logged in successfully
+2023-10-15T14:32:30.123456 [192.168.1.200] Oct 15 14:32:30 firewall: Connection blocked from 203.0.113.5 to port 22
+2025-06-22T18:51:51.584546 [127.0.0.1] Test syslog message from 192.168.1.100
+2025-06-22T18:54:12.045827 [127.0.0.1] Oct 22 18:45:00 server sshd: Failed password for user admin from 192.168.1.101
+2025-06-22T18:54:13.047779 [127.0.0.1] Oct 22 06:30:00 server login: User nightuser logged in successfully from 192.168.1.200
+2025-06-22T18:54:14.050071 [127.0.0.1] Oct 22 18:45:30 firewall: Connection blocked from 203.0.113.5 to port 22
+2025-06-22T18:54:15.051959 [127.0.0.1] Test syslog message from test_syslog.py script
+2025-06-22T18:57:57.536193 [127.0.0.1] Oct 22 18:45:00 server sshd: Failed password for user admin from 192.168.1.101
+2025-06-22T18:57:58.538410 [127.0.0.1] Oct 22 06:30:00 server login: User nightuser logged in successfully from 192.168.1.200
+2025-06-22T18:57:59.540091 [127.0.0.1] Oct 22 18:45:30 firewall: Connection blocked from 203.0.113.5 to port 22
+2025-06-22T18:58:00.542255 [127.0.0.1] Test syslog message from test_syslog.py script
+2025-06-22T18:58:16.940839 [127.0.0.1] Puto el que lo lea
+2025-06-22T19:05:02.305707 [127.0.0.1] DEMO Method 1: Python script message
+2025-06-22T19:05:02.785500 [127.0.0.1] DEMO Method 2: PowerShell UDP message
+2025-06-22T19:07:00.196886 [127.0.0.1] HEALTH_CHECK
+2025-06-22T19:07:00.198073 [127.0.0.1] Oct 22 18:45:00 server sshd: Failed password for user admin from 192.168.1.101
+2025-06-22T19:07:01.199711 [127.0.0.1] Oct 22 06:30:00 server login: User nightuser logged in successfully from 192.168.1.200
+2025-06-22T19:07:02.201711 [127.0.0.1] Oct 22 18:45:30 firewall: Connection blocked from 203.0.113.5 to port 22
+2025-06-22T19:07:03.203431 [127.0.0.1] Test syslog message from test_syslog.py script
+2025-06-22T19:07:24.501391 [127.0.0.1] Puto el que lo lea from 192.168.1.123
+{"timestamp": "2025-06-22T19:16:26.677165", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T19:16:26.677177 [192.168.1.66] Oct 22 19:16:26 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T19:16:26.677200 [192.168.1.66] Oct 22 19:16:26 server security: File encryption process started by unknown executable
+{"timestamp": "2025-06-22T19:38:59.265558", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T19:38:59.265571 [192.168.1.66] Oct 22 19:38:59 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T19:38:59.265590 [192.168.1.66] Oct 22 19:38:59 server security: File encryption process started by unknown executable
+2025-06-22T19:39:15.144464 [192.168.1.88] Oct 22 19:39:15 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:39:45.144464 [192.168.1.88] Oct 22 19:39:45 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:40:15.144464 [192.168.1.88] Oct 22 19:40:15 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:40:45.144464 [192.168.1.88] Oct 22 19:40:45 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:41:15.144464 [192.168.1.88] Oct 22 19:41:15 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:41:45.144464 [192.168.1.88] Oct 22 19:41:45 server sshd: Failed password for user admin from 192.168.1.88
+{"timestamp": "2025-06-22T19:49:21.305617", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T19:49:21.305634 [192.168.1.66] Oct 22 19:49:21 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T19:49:21.305677 [192.168.1.66] Oct 22 19:49:21 server security: File encryption process started by unknown executable
+{"timestamp": "2025-06-22T19:49:46.381776", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T19:49:46.381790 [192.168.1.66] Oct 22 19:49:46 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T19:49:46.381821 [192.168.1.66] Oct 22 19:49:46 server security: File encryption process started by unknown executable
+2025-06-22T19:49:53.551837 [192.168.1.88] Oct 22 19:49:53 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:50:23.551837 [192.168.1.88] Oct 22 19:50:23 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:50:53.551837 [192.168.1.88] Oct 22 19:50:53 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:51:23.551837 [192.168.1.88] Oct 22 19:51:23 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:51:53.551837 [192.168.1.88] Oct 22 19:51:53 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:52:23.551837 [192.168.1.88] Oct 22 19:52:23 server sshd: Failed password for user admin from 192.168.1.88
+{"timestamp": "2025-06-22T19:56:32.492261", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T19:56:32.492279 [192.168.1.66] Oct 22 19:56:32 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T19:56:32.492334 [192.168.1.66] Oct 22 19:56:32 server security: File encryption process started by unknown executable
+2025-06-22T19:56:35.394699 [192.168.1.88] Oct 22 19:56:35 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:57:05.394699 [192.168.1.88] Oct 22 19:57:05 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:57:35.394699 [192.168.1.88] Oct 22 19:57:35 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:58:05.394699 [192.168.1.88] Oct 22 19:58:05 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:58:35.394699 [192.168.1.88] Oct 22 19:58:35 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T19:59:05.394699 [192.168.1.88] Oct 22 19:59:05 server sshd: Failed password for user admin from 192.168.1.88
+{"timestamp": "2025-06-22T20:15:43.113089", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T20:15:43.113104 [192.168.1.66] Oct 22 20:15:43 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T20:15:43.113129 [192.168.1.66] Oct 22 20:15:43 server security: File encryption process started by unknown executable
+{"timestamp": "2025-06-22T20:15:47.741091", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T20:15:47.741105 [192.168.1.66] Oct 22 20:15:47 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T20:15:47.741131 [192.168.1.66] Oct 22 20:15:47 server security: File encryption process started by unknown executable
+{"timestamp": "2025-06-22T20:17:16.603065", "source_ip": "192.168.1.66", "event_type": "ransomware_detected", "details": "File encryption activity detected on C:\\Users\\Documents\\*.docx", "extra_process": "malware_encrypt.exe", "extra_files_affected": 156}
+2025-06-22T20:17:16.603090 [192.168.1.66] Oct 22 20:17:16 server malware: RANSOMWARE ACTIVITY DETECTED - URGENT
+2025-06-22T20:17:16.603142 [192.168.1.66] Oct 22 20:17:16 server security: File encryption process started by unknown executable
+2025-06-22T20:17:41.709271 [192.168.1.88] Oct 22 20:17:41 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T20:18:11.709271 [192.168.1.88] Oct 22 20:18:11 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T20:18:41.709271 [192.168.1.88] Oct 22 20:18:41 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T20:19:11.709271 [192.168.1.88] Oct 22 20:19:11 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T20:19:41.709271 [192.168.1.88] Oct 22 20:19:41 server sshd: Failed password for user admin from 192.168.1.88
+2025-06-22T20:20:11.709271 [192.168.1.88] Oct 22 20:20:11 server sshd: Failed password for user admin from 192.168.1.88
